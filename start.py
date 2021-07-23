@@ -16,7 +16,7 @@ except Exception as e:
     exit()
 
 
-@cbot.on(events.NewMessage(pattern="/start"))
+@cbot.on(events.NewMessage())
 async def my_event_handler(event):
     if 'hello' in event.raw_text:
         await event.reply('hi!')
@@ -24,8 +24,9 @@ async def my_event_handler(event):
         await event.reply('Goodbye to you too!')
     if event.is_reply:
         replied = await event.get_reply_message()
-        sender = event.get_sender()
+        sender = await event.get_sender()
         slenderer = replied.sender
         await event.reply(f"replied username is {slenderer.username}. and your username is {sender.username}")
-cbot.start()
+
+
 cbot.run_until_disconnected()
