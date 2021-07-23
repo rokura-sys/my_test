@@ -1,5 +1,5 @@
 from decouple import config
-from telethon import TelegramClient, events
+from telethon.sync import TelegramClient, functions, events, types
 from logging import INFO, basicConfig, getLogger
 
 APP_ID = config("APP_ID", cast=int)
