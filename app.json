@@ -2,7 +2,7 @@
     "name": "TestBottt",
     "description": "A Normal Telegram Bot Which can do nothing",
     "keywords": ["Telegram","python", "Nothing"],
-    "repository": "https://github.com/1Danish-00/CompressorBot",
+    "repository": "https://github.com/rokura-sys/my_test",
     "success_url": "https://t.me/RobCK",
     "stack": "container",
     "env": {
