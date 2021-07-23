@@ -28,5 +28,4 @@ async def my_event_handler(event):
         slenderer = replied.sender
         await event.reply(f"replied username is {slenderer.username}. and your username is {sender.username}")
 
-
 cbot.run_until_disconnected()
